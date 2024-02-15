@@ -2,12 +2,14 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CallIcon from '@mui/icons-material/Call';
+import MailIcon from '@mui/icons-material/Mail';
 function Footer(){
     return(
-        <div className="bg-black flex mt-[-40px] pt-[20px] gap-[30px]">
+        <div id='contact' className="bg-black flex mt-[-40px] pt-[20px] gap-[30px]">
             <div className='text-white flex flex-col gap-[10px] p-[20px]'>
             <h1 className='font-bold text-xl'>Əlaqə</h1>
-                <a href='tel://+994554231175' className='flex gap-[15px]'><CallIcon/>Zəng et</a>
+                <a href='tel://+994554231175' className='flex gap-[15px] bg-blue-600 rounded-[7px] flex items-center justify-center h-[35px] w-[120px]'><CallIcon/>Zəng et</a>
+                <a href="mailto:obatourism@outlook.com" className='flex gap-[15px] bg-red-600 rounded-[7px] flex items-center justify-center h-[35px] w-[120px]'><MailIcon/>Email</a>
             </div>
             <div className='text-white flex flex-col gap-[10px] p-[20px]'>
                 <h1 className='font-bold text-xl'>Sosial media</h1>

@@ -6,7 +6,7 @@ function AboutUs(){
     AOS.init()
    },)
     return(
-        <div data-aos="zoom-in-right" className="bg-blue-600 pb-[40px] pt-[20px] rounded-t-[30px] w-full h-auto flex flex-col items-center gap-[20px]">
+        <div id='haqqimizda' data-aos="zoom-in-right" className="bg-blue-600 pb-[40px] pt-[20px] rounded-t-[30px] w-full h-auto flex flex-col items-center gap-[20px]">
         <div>
         <h1 className="title2 text-white flex flex-col items-center w-full text-center font-bold text-xl">Haqqımızda</h1>
         </div>
@@ -19,8 +19,8 @@ X Turizm Şirkəti olaraq, çeşidliliyin və keyfiyyətin ön planda olduğu ge
 
 </p>
     </div>
-    <div>
-<img src="./tourback.png" className="img rounded-[20px] object-cover"></img>
+    <div className='bg-white rounded-[20px]'>
+<img src="./tourback.png" className="rounded-[20px] object-cover"></img>
     </div>
         </div>
 

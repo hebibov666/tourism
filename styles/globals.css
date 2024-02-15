@@ -51,15 +51,4 @@ body {
 .box{
  background:rgb(233, 9, 9);
  border-radius: 10px;
-}        
- @media screen and (max-width:571px){
-  .btn-grad {
-    border:4px solid transparent;
-     border-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
-     transition: 0.5s;       
-     display: block;
-     border-image-slice: 1;
-     border-right: 0px !important;
-   }
-
- }     
+}            

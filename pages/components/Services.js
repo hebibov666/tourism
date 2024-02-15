@@ -29,7 +29,7 @@ function Services(){
         }
     ]
     return(
-        <div className="w-full pb-[30px] bg-white flex flex-col items-center gap-[20px]">
+        <div id="services" className="w-full pb-[30px] bg-white flex flex-col items-center gap-[20px]">
          <div>
          <h1 className="title flex flex-col items-center w-full text-center font-bold text-xl">Xidmətlər</h1>
          </div>
