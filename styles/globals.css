@@ -2,19 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -25,9 +14,52 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.list::after{
+  content: "";
+  background: #6228d7;
+  width:0%;
+  height:3px;
+  display: flex;
 }
+.list:hover::after{
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.swiper-pagination-bullet{
+  background: rgb(255, 255, 255) !important;
+ margin-top: 170px !important;
+ border-radius: 0% !important;
+ width: 30px !important;
+}
+.title::after{
+  content: "";
+  width: 110%;
+  height: 4px;
+  display: block;
+  background: rgb(9, 164, 253);
+}
+.title2::after{
+  content: "";
+  width: 110%;
+  height: 4px;
+  display: block;
+  background: rgb(253, 254, 255);
+}
+.img{
+  box-shadow: 5px 5px 7px 10px rgba(255, 255, 255, 0.774)
+}
+.box{
+ background:rgb(233, 9, 9);
+ border-radius: 10px;
+}        
+ @media screen and (max-width:571px){
+  .btn-grad {
+    border:4px solid transparent;
+     border-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+     transition: 0.5s;       
+     display: block;
+     border-image-slice: 1;
+     border-right: 0px !important;
+   }
+
+ }     
