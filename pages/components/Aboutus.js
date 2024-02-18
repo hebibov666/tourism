@@ -2,8 +2,26 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { client } from "@/sanity/lib/client";
 import { useEffect, useState } from 'react';
-function AboutUs({about}){
-   
+function AboutUs(){
+    const [about,setAbout]=useState()
+    const getText=async()=>{
+        try {
+            const result = await client.fetch(
+                `*[_type=="about"]{
+                    _id,
+                  description,
+                }`
+            );
+            setAbout(result)
+            console.log(about)
+    }catch(error){
+        console.log(error)
+    }
+    
+   }
+useEffect(()=>{
+getText()
+},[])
    useEffect(()=>{
     AOS.init()
    },)
