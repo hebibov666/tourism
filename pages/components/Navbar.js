@@ -17,7 +17,7 @@ function Navbar(){
                 <ul className="relative max-[565px]:items-start max-[565px]:pl-4 max-[565px]:text-[18px]  bg-white w-full flex items-center min-[565px]:justify-end gap-[15px] max-[565px]:flex-col max-[565px]:pt-[60px]">
 <a href='#haqqimizda'><li className='list  flex flex-col box-border'>Haqqımızda</li></a>
 <a href='#services'><li className='list  flex flex-col'>Xidmətlər</li></a>
-<a href='#services'><li className='list  flex flex-col'>Qalareya</li></a>
+<a href='#gallery'><li className='list  flex flex-col'>Qalareya</li></a>
 <a href='#contact'><li className='list flex flex-col'>Əlaqə</li></a>
                 </ul>
             </div>

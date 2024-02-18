@@ -6,6 +6,9 @@ import SliderSection from "./components/SliderSection";
 import Services from "./components/Services";
 import AboutUs from "./components/Aboutus";
 import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
+import { getServerSideProps } from "./components/Gallery";
+import { useEffect } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -15,6 +18,7 @@ export default function Home() {
   <div className="flex flex-col gap-[20px]">
   <SliderSection/>
   <Services/>
+  <Gallery/>
   <AboutUs/>
   <Footer/>
   </div>
